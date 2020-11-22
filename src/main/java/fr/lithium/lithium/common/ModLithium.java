@@ -4,6 +4,7 @@ import cpw.mods.fml.common.*;
 import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.*;
+import fr.lithium.lithium.proxy.CommonProxy;
 
 @Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
 
@@ -14,6 +15,9 @@ public class ModLithium {
 	 
 	public static ModLithium instance;
 
+	@SidedProxy(clientSide = "fr.lithium.lithium.proxy.ClientProxy", serverSide = "fr.lithium.lithium.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
@@ -23,7 +27,7 @@ public class ModLithium {
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-	 
+		proxy.registerRender();
 	}
 	    	
 	@EventHandler

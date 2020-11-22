@@ -1,0 +1,5 @@
+package fr.lithium.lithium.proxy;
+
+public class ClientProxy {
+
+}

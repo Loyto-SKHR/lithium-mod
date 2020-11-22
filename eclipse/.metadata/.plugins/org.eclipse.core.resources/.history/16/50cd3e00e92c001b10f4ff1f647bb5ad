@@ -1,0 +1,37 @@
+package fr.lithium.lithium.common;
+
+import cpw.mods.fml.common.*;
+import cpw.mods.fml.common.Mod.*;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.event.*;
+
+@Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
+
+public class ModLithium {
+	public static final String MODID = "LithiumMod";
+	 
+	@Instance(MODID)
+	 
+	public static ModLithium instance;
+
+	@SidedProxy(clientSide = "fr.lithium.lithium.proxy.ClientProxy", serverSide = "fr.lithium.lithium.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+	 
+	}
+	    	
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+	 
+	}
+	    	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+	    	
+	}
+}
