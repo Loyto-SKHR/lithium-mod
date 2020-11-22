@@ -1,0 +1,29 @@
+package fr.lithium.lithium.common;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Instance;
+
+@Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
+
+public class ModLithium {
+	 @Instance("LithiumMod")
+	 public static ModLithium instance;
+
+	 @EventHandler
+	 public void preInit(FMLPreInitializationEvent event)
+	 {
+	 
+	 }
+	    	
+	 @EventHandler
+	 public void init(FMLInitializationEvent event)
+	 {
+	 
+	 }
+	    	
+	 @EventHandler
+	 public void postInit(FMLPostInitializationEvent event)
+	 {
+	    	
+	 }
+}
