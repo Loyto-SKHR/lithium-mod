@@ -1,74 +1,26 @@
-[19:32:30] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[19:32:43] [Server thread/INFO]: Loading properties
-[19:32:43] [Server thread/INFO]: Default game type: SURVIVAL
-[19:32:43] [Server thread/INFO]: Generating keypair
-[19:32:43] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:32:46] [Server thread/WARN]: Failed to load user banlist: 
-java.io.FileNotFoundException: banned-players.json (Le fichier spécifié est introuvable)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_271]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_271]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_271]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152620_y(DedicatedPlayerList.java:124) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:31) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[19:32:46] [Server thread/WARN]: Failed to load ip banlist: 
-java.io.FileNotFoundException: banned-ips.json (Le fichier spécifié est introuvable)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_271]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_271]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_271]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152619_x(DedicatedPlayerList.java:112) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:33) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[19:32:46] [Server thread/WARN]: Failed to load operators list: 
-java.io.FileNotFoundException: ops.json (Le fichier spécifié est introuvable)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_271]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_271]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_271]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.loadOpsList(DedicatedPlayerList.java:136) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:35) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[19:32:46] [Server thread/WARN]: Failed to load white-list: 
-java.io.FileNotFoundException: whitelist.json (Le fichier spécifié est introuvable)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_271]
-	at java.io.FileInputStream.open(Unknown Source) ~[?:1.8.0_271]
-	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_271]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.readWhiteList(DedicatedPlayerList.java:160) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:36) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[19:32:46] [Server thread/INFO]: Preparing level "world"
-[19:32:48] [Server thread/INFO]: Preparing start region for level 0
-[19:32:49] [Server thread/INFO]: Preparing spawn area: 5%
-[19:32:50] [Server thread/INFO]: Preparing spawn area: 14%
-[19:32:51] [Server thread/INFO]: Preparing spawn area: 21%
-[19:32:52] [Server thread/INFO]: Preparing spawn area: 27%
-[19:32:53] [Server thread/INFO]: Preparing spawn area: 34%
-[19:32:54] [Server thread/INFO]: Preparing spawn area: 46%
-[19:32:55] [Server thread/INFO]: Preparing spawn area: 52%
-[19:32:57] [Server thread/INFO]: Preparing spawn area: 63%
-[19:32:58] [Server thread/INFO]: Preparing spawn area: 76%
-[19:32:59] [Server thread/INFO]: Preparing spawn area: 91%
-[19:33:00] [Server thread/INFO]: Preparing spawn area: 97%
-[19:33:00] [Server thread/INFO]: Done (13,396s)! For help, type "help" or "?"
-[19:33:13] [Server thread/INFO]: Stopping the server
-[19:33:13] [Server thread/INFO]: Stopping server
-[19:33:13] [Server thread/INFO]: Saving players
-[19:33:13] [Server thread/INFO]: Saving worlds
-[19:33:13] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
-[19:33:13] [Server thread/INFO]: Saving chunks for level 'world'/Nether
-[19:33:13] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[20:24:01] [main/INFO]: Setting user: Player599
+[20:24:03] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:24:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[20:24:15] [Sound Library Loader/INFO]: Sound engine started
+[20:24:17] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[20:24:17] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[20:24:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[20:24:18] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:24:18] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:24:19] [Sound Library Loader/INFO]: Sound engine started
+[20:24:26] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:24:26] [Server thread/INFO]: Generating keypair
+[20:24:27] [Server thread/INFO]: Preparing start region for level 0
+[20:24:28] [Server thread/INFO]: Preparing spawn area: 47%
+[20:24:28] [Server thread/INFO]: Changing view distance to 2, from 10
+[20:24:29] [Server thread/INFO]: Player599[local:E:e9a266ae] logged in with entity id 372 at (-335.39140934653744, 63.0, 183.95578928829795)
+[20:24:29] [Server thread/INFO]: Player599 a rejoint la partie
+[20:24:49] [Client thread/INFO]: Stopping!
+[20:24:49] [Server thread/INFO]: Stopping server
+[20:24:49] [Server thread/INFO]: Saving players
+[20:24:49] [Server thread/INFO]: Saving worlds
+[20:24:49] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
+[20:24:49] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
+[20:24:49] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
+[20:24:49] [Client Shutdown Thread/INFO]: Stopping server
+[20:24:49] [Client Shutdown Thread/INFO]: Saving players

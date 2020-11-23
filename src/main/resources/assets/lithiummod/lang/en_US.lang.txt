@@ -1,0 +1,5 @@
+item.itemTest.name=test
+item.helmetTest.name=Test Helmet
+item.chestPlateTest.name=Test ChestPlate
+item.leggingsTest.name=Test Leggings
+item.bootsTest.name=Test Boots

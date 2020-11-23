@@ -1,0 +1,13 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemHoe;
+
+public class ItemLithiumHoe extends ItemHoe {
+	
+	public ItemLithiumHoe(ToolMaterial material) {
+		super(material);
+		
+		this.setUnlocalizedName("itemLithiumHoe");
+	}
+	
+}

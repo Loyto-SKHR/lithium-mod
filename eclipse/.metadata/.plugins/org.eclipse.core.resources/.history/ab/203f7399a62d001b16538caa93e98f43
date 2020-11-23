@@ -1,0 +1,19 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemHoe;
+
+public class ItemLithiumHoe extends ItemHoe {
+	
+	public ItemLithiumHoe(ToolMaterial material) {
+		super(material);
+		
+		this.setUnlocalizedName("itemLithiumHoe");
+	}
+	
+	@Override
+    public void registerIcons(IIconRegister iconregister)
+    {
+        this.itemIcon = iconregister.registerIcon(ModLithium.MODID + ":lithium-shovel");
+    }
+}

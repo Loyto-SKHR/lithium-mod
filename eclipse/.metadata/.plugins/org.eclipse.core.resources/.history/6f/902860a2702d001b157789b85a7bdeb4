@@ -1,0 +1,7 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.Item;
+
+public class ItemTestSword extends Item {
+
+}

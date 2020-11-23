@@ -1,9 +1,0 @@
-package fr.lithium.lithium.common;
-
-import cpw.mods.fml.common.Mod;
-
-@Mod(modid = "LithiumMod")
-
-public class ModLithium {
-
-}

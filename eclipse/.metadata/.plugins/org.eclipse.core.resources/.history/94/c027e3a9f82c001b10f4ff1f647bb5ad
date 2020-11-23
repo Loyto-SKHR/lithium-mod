@@ -1,0 +1,52 @@
+package fr.lithium.lithium.common;
+
+import cpw.mods.fml.common.*;
+import cpw.mods.fml.common.Mod.*;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.event.*;
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.lithium.lithium.proxy.CommonProxy;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+
+@Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
+
+public class ModLithium {
+	public static final String MODID = "LithiumMod";
+	 
+	@Instance(MODID)
+	 
+	public static ModLithium instance;
+
+	@SidedProxy(clientSide = "fr.lithium.lithium.proxy.ClientProxy", serverSide = "fr.lithium.lithium.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	
+	//Items:
+	public static Item itemTest, itemTest2, helmetTest, chestPlateTest, leggingsTest, bootsTest;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		//Items:
+		itemTest = new ItemTest();
+		GameRegistry.registerItem(itemTest, "item_test");
+		
+		//Armures:
+		public static ArmorMaterial armorTest = EnumHelper.addArmorMaterial("armorTuto", 25, new int[] {4, 6, 5, 4}, 20);
+	}
+	    	
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		proxy.registerRender();
+		
+		//Armures:
+	}
+	    	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+	    	
+	}
+}

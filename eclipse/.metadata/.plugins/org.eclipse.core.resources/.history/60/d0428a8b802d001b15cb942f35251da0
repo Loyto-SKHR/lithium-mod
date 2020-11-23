@@ -1,0 +1,12 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemAxe;
+
+public class ItemLithiumAxe extends ItemAxe {
+
+	public ItemLithiumAxe(ToolMaterial material) {
+		super(material);
+		
+		this.setUnlocalizedName("ItemLithiumAxe")
+	}
+}
