@@ -26,13 +26,19 @@ public class ItemTestArmor extends ItemArmor {
 	
 	public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
     {
-		if(this.armorType == 0 && world.getBlockLightValue(MathHelper.floor_double(player.posX), MathHelper.floor_double(player.posY), MathHelper.floor_double(player.posZ)) < 8)
+		if(this.armorType == 0)
         {
             player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 220, 0));
         }
 		
-		player.addPotionEffect(new PotionEffect(Potion.resistance.id, 20, 0));
+		if(this.armorType == 1)
+		{
+			player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 20, 0));
+		}
+		
+		if(this.armorType == 2)
+		{
+			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 20, 0));
+		}
     }
-	
-	
 }

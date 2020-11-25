@@ -6,10 +6,13 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.lithium.lithium.proxy.CommonProxy;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
@@ -25,21 +28,26 @@ public class ModLithium {
 	public static CommonProxy proxy;
 	
 	//Items:
-	public static Item itemTest, itemTest2, helmetTest, chestPlateTest, leggingsTest, bootsTest, swordLithium, pickaxeLithium, axeLithium, shovelLithium, hoeLithium;
+	public static Item itemTest, ingotLithium, helmetLithium, chestPlateLithium, leggingsLithium, bootsLithium, swordLithium, pickaxeLithium, axeLithium, shovelLithium, hoeLithium, appleLithium;
 	
-	public static ArmorMaterial armorTest = EnumHelper.addArmorMaterial("armorTest", 200, new int[] {5, 8, 6, 5}, 20);
+	public static Block blockLithiumOre , lithiumBlock;
 	
-	public static ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 2, 2500, 12.0F, 20.0F, 18);
+	WorldGeneration worldgeneration = new WorldGeneration();
+	
+	public static ArmorMaterial armorLithium = EnumHelper.addArmorMaterial("armorTest", 200, new int[] {5, 8, 6, 5}, 20);
+	
+	public static ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 3, 2500, 18.0F, 20.0F, 18);
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		itemTest = new ItemTest();
+		ingotLithium = new ItemLithiumIngot();
 		
-		helmetTest = new ItemTestArmor(armorTest, 0).setUnlocalizedName("helmetTest").setTextureName(MODID + ":lithium-helmet").setCreativeTab(CreativeTabs.tabCombat);
-        chestPlateTest = new ItemTestArmor(armorTest, 1).setUnlocalizedName("chestPlateTest").setTextureName(MODID + ":lithium-chestplate").setCreativeTab(CreativeTabs.tabCombat);
-        leggingsTest = new ItemTestArmor(armorTest, 2).setUnlocalizedName("leggingsTest").setTextureName(MODID + ":lithium-leggings").setCreativeTab(CreativeTabs.tabCombat);
-        bootsTest = new ItemTestArmor(armorTest, 3).setUnlocalizedName("bootsTest").setTextureName(MODID + ":lithium-boots").setCreativeTab(CreativeTabs.tabCombat);
+		helmetLithium = new ItemTestArmor(armorLithium, 0).setUnlocalizedName("helmetLithium").setTextureName(MODID + ":lithium-helmet").setCreativeTab(CreativeTabs.tabCombat);
+        chestPlateLithium = new ItemTestArmor(armorLithium, 1).setUnlocalizedName("chestPlateLithium").setTextureName(MODID + ":lithium-chestplate").setCreativeTab(CreativeTabs.tabCombat);
+        leggingsLithium = new ItemTestArmor(armorLithium, 2).setUnlocalizedName("leggingsLithium").setTextureName(MODID + ":lithium-leggings").setCreativeTab(CreativeTabs.tabCombat);
+        bootsLithium = new ItemTestArmor(armorLithium, 3).setUnlocalizedName("bootsLithium").setTextureName(MODID + ":lithium-boots").setCreativeTab(CreativeTabs.tabCombat);
 	
         swordLithium = new ItemLithiumSword(toolLithium);
         pickaxeLithium = new ItemLithiumPickaxe(toolLithium);
@@ -47,18 +55,31 @@ public class ModLithium {
         shovelLithium = new ItemLithiumShovel(toolLithium);
         hoeLithium = new ItemLithiumHoe(toolLithium);
         
+        blockLithiumOre = new BlockLithiumOre(Material.rock);
+        lithiumBlock = new BlockLithiumBlock(Material.rock);
+        
+        appleLithium = new ItemLithiumApple(4, 0.3F, false);
+        
 		GameRegistry.registerItem(itemTest, "item_test");
+		GameRegistry.registerItem(ingotLithium, "lithium_ingot");
 		
-		GameRegistry.registerItem(helmetTest, "helmet_test");
-		GameRegistry.registerItem(chestPlateTest, "chestplate_test");
-		GameRegistry.registerItem(leggingsTest, "leggings_test");
-		GameRegistry.registerItem(bootsTest, "boots_test");
+		GameRegistry.registerItem(helmetLithium, "helmet_test");
+		GameRegistry.registerItem(chestPlateLithium, "chestplate_test");
+		GameRegistry.registerItem(leggingsLithium, "leggings_test");
+		GameRegistry.registerItem(bootsLithium, "boots_test");
 		
 		GameRegistry.registerItem(swordLithium, "lithium_sword");
 		GameRegistry.registerItem(pickaxeLithium, "lithium_pickaxe");
 		GameRegistry.registerItem(axeLithium, "lithium_axe");
 		GameRegistry.registerItem(shovelLithium, "lithium_shovel");
 		GameRegistry.registerItem(hoeLithium, "lithium_hoe");
+		
+		GameRegistry.registerBlock(blockLithiumOre, "lithium_ore");
+		GameRegistry.registerBlock(lithiumBlock, "lithium_block");
+		
+		GameRegistry.registerItem(appleLithium, "lithium_apple");
+
+		GameRegistry.registerWorldGenerator(worldgeneration, 0);
 	}
 	    	
 	@EventHandler

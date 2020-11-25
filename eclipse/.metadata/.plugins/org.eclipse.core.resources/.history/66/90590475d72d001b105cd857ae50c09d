@@ -1,0 +1,47 @@
+package fr.lithium.lithium.common;
+
+
+import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.feature.WorldGenMinable;
+import scala.util.Random;
+ 
+public class WorldGeneratorLithium implements IWorldGenerator {
+
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
+	{
+	    switch(world.provider.dimensionId)
+	    {
+	        case -1:
+	        this.generateNether(world, chunkX * 16, chunkZ * 16, random);
+	        break;
+	        case 0:
+	        this.generateSurface(world, chunkX * 16, chunkZ * 16, random);
+	        break;
+	        case 1:
+	        this.generateEnd(world, chunkX * 16, chunkZ * 16, random);
+	        break;
+	    }
+	}
+	 
+	private void generateSurface(World world, int x, int z, Random random)
+	{
+		for(int i = 0; i < 50; i++)
+		{
+		    (new WorldGenMinable(ModLithium.blockLithiumOre, 0, 5, Blocks.stone)).generate(world, random, x + random.nextInt(16), random.nextInt(15), z + random.nextInt(16));
+		}
+	}
+	 
+	private void generateEnd(World world, int x, int z, Random rand)
+	{
+		
+	}
+	 
+	private void generateNether(World world, int x, int z, Random rand)
+	{
+		
+	}
+}

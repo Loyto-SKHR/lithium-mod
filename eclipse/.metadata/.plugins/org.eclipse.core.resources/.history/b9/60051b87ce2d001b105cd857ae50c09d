@@ -1,0 +1,12 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+ 
+public class BlockLithiumOre extends Block {
+	
+    protected BlockLithiumOre(Material material)
+    {
+        super(material);
+    }
+}

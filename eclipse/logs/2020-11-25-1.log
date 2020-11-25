@@ -1,0 +1,171 @@
+[13:26:37] [main/INFO]: Setting user: Player900
+[13:26:39] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:26:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[13:26:52] [Sound Library Loader/INFO]: Sound engine started
+[13:26:54] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[13:26:54] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[13:26:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[13:26:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:26:55] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[13:26:56] [Sound Library Loader/INFO]: Sound engine started
+[13:27:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:27:05] [Server thread/INFO]: Generating keypair
+[13:27:05] [Server thread/INFO]: Preparing start region for level 0
+[13:27:06] [Server thread/INFO]: Preparing spawn area: 69%
+[13:27:07] [Server thread/INFO]: Changing view distance to 2, from 10
+[13:27:08] [Server thread/INFO]: Player900[local:E:bc1d7270] logged in with entity id 441 at (10.464455852540974, 112.67168322870799, 261.8890284305899)
+[13:27:08] [Server thread/INFO]: Player900 a rejoint la partie
+[13:27:14] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@57494a0e[id=a0803941-42b2-30d8-878b-d5bba587b8ae,name=Player900,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_271]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
+	... 18 more
+[13:28:00] [Server thread/INFO]: Player900 vient d'obtenir le succès [Faire l'inventaire]
+[13:28:00] [Client thread/INFO]: [CHAT] Player900 vient d'obtenir le succès [Faire l'inventaire]
+[13:28:39] [Client thread/INFO]: Stopping!
+[13:28:39] [Server thread/INFO]: Stopping server
+[13:28:39] [Server thread/INFO]: Saving players
+[13:28:39] [Server thread/INFO]: Saving worlds
+[13:28:39] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
+[13:28:39] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
+[13:28:39] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
+[13:28:39] [Client Shutdown Thread/INFO]: Stopping server
+[13:28:39] [Client Shutdown Thread/INFO]: Saving players
+[14:25:52] [main/INFO]: Setting user: Player7
+[14:25:56] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:26:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loade[14:26:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[14:26:30] [Sound Library Loader/INFO]: Sound engine started
+[14:26:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:26:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:26:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[14:26:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:26:34] [Client thread/INFO[14:27:11] [Client thread/INFO]: Connecting to 169.254.248.181, 6101
+[14:27:16] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3e05376b[id=f9567117-2555-3219-a3d6-01de0ddd7332,name=Player7,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_271]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
+	... 18 more
+[14:27:17] [Client thread/INFO]: [CHAT] Player332 vient d'obtenir le succès [Faire l'inventaire]
+[14:27:29] [Client thread/INFO]: Stopping!
+protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
+	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_271]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
+	... 18 more
+[14:27:03] [Client thread/INFO]: Started on 6101
+[14:27:03] [Client thread/INFO]: [CHAT] Jeu local hébergé sur le port 6101
+[14:27:15] [User Authenticator #1/WARN]: Authentication servers are down but will let them in anyway!
+[14:27:15] [Server thread/INFO]: Player7[/169.254.248.181:6119] logged in with entity id 1645 at (17.5, 112.0, 268.5)
+[14:27:15] [Server thread/INFO]: Player7 a rejoint la partie
+[14:27:15] [Client thread/INFO]: [CHAT] Player7 a rejoint la partie
+[14:27:16] [Server thread/INFO]: Player332 vient d'obtenir le succès [Faire l'inventaire]
+[14:27:16] [Client thread/INFO]: [CHAT] Player332 vient d'obtenir le succès [Faire l'inventaire]
+[14:27:26] [Client thread/INFO]: Stopping!
+[14:27:26] [Server thread/INFO]: Stopping server
+[14:27:26] [Server thread/INFO]: Saving players
+[14:27:26] [Server thread/INFO]: Saving worlds
+[14:27:26] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
+[14:27:26] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
+[14:27:26] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
+[14:27:26] [Client Shutdown Thread/INFO]: Stopping server
+[14:27:26] [Client Shutdown Thread/INFO]: Saving players
+[14:28:06] [main/INFO]: Setting user: Player846

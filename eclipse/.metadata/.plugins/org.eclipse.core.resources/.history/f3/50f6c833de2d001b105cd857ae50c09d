@@ -1,0 +1,11 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemFood;
+
+public class ItemLithiumApple extends ItemFood {
+
+	public ItemLithiumApple(int id, int foodAmount, float saturation, boolean isWolfFood)
+    {
+        super(id, foodAmount, isWolfFood);
+    }
+}

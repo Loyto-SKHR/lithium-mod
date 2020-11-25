@@ -1,0 +1,32 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.event.entity.living.LivingFallEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+ 
+public class LivingEventHandler
+{
+    @SubscribeEvent
+    public void onLivingHurt(LivingHurtEvent event)
+    {
+    	
+    	ItemStack boots = event.entityLiving.getEquipmentInSlot(1);
+        ItemStack leggings = event.entityLiving.getEquipmentInSlot(2);
+        ItemStack chestPlate = event.entityLiving.getEquipmentInSlot(3);
+        ItemStack helmet = event.entityLiving.getEquipmentInSlot(4);
+        
+    	if(boots != null && boots.getItem() == ModLithium.bootsLithium && leggings != null && leggings.getItem() == ModLithium.leggingsLithium && chestPlate != null && chestPlate.getItem() == ModLithium.chestPlateLithium && helmet != null && helmet.getItem() == ModLithium.helmetLithium)
+        {
+    		player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 40, 0));
+        }
+    }
+ 
+    @SubscribeEvent
+    public void onLivingFall(LivingFallEvent event)
+    {
+ 
+    }
+}

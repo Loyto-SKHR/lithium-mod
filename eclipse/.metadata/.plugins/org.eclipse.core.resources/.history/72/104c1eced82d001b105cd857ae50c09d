@@ -1,0 +1,5 @@
+package fr.lithium.lithium.common;
+
+public class WorldGeneration {
+
+}

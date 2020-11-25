@@ -1,0 +1,16 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemFood;
+import net.minecraft.potion.Potion;
+
+public class ItemLithiumApple extends ItemFood {
+
+	public ItemLithiumApple(int id, int foodAmount, boolean isWolfFood)
+    {
+        super(id, foodAmount, isWolfFood);
+        
+        this.setPotionEffect(Potion.resistance.id, 30, 0, 1.0F);
+        this.setPotionEffect(Potion.regeneration.id, 60, 1, 1.0F);
+        this.setPotionEffect(Potion.field_76444_x.id, 120, 2, 1.0F);
+    }
+}

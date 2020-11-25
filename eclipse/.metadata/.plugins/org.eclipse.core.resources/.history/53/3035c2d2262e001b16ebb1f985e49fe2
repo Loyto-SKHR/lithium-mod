@@ -1,0 +1,18 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+ 
+public class BlockLithiumOre extends Block {
+	
+    protected BlockLithiumOre(Material material)
+    {
+        super(material);
+        
+        this.setBlockName("lithiumOre");
+        this.setBlockTextureName(ModLithium.MODID + ":lithium-ore");
+        this.setHarvestLevel("pickaxe", 2);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+    }
+}

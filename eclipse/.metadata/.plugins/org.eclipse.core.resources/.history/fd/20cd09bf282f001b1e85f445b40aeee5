@@ -1,0 +1,30 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.entity.living.LivingFallEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+ 
+public class LivingEventHandler
+{
+    @SubscribeEvent
+    public void onLivingHurt(LivingHurtEvent event)
+    {
+    	
+    	ItemStack boots = event.entityLiving.getEquipmentInSlot(1);
+        ItemStack leggings = event.entityLiving.getEquipmentInSlot(2);
+        ItemStack chestPlate = event.entityLiving.getEquipmentInSlot(3);
+        ItemStack helmet = event.entityLiving.getEquipmentInSlot(4);
+        
+    	if(boots != null && boots.getItem() == ModTutoriel.bootsTuto && leggings != null && leggings.getItem() == ModTutoriel.leggingsTuto && chestPlate != null && chestPlate.getItem() == ModTutoriel.chestPlateTuto && helmet != null && helmet.getItem() == ModTutoriel.helmetTuto)
+        {
+    		
+        }
+    }
+ 
+    @SubscribeEvent
+    public void onLivingFall(LivingFallEvent event)
+    {
+ 
+    }
+}
