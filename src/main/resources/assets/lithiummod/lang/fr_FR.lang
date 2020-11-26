@@ -20,10 +20,22 @@ item.helmetSodium.name=Sodium Helmet
 item.chestPlateSodium.name=Sodium ChestPlate
 item.leggingsSodium.name=Sodium Leggings
 item.bootsSodium.name=Sodium Boots
+item.berylliumIngot.name=Beryllium Ingot
+item.berylliumSword.name=Beryllium Sword
+item.berylliumPickaxe.name=Beryllium Pickaxe
+item.berylliumAxe.name=Beryllium Axe
+item.berylliumShovel.name=Beryllium Shovel
+item.berylliumHoe.name=Beryllium Hoe
+item.helmetBeryllium.name=Beryllium Helmet
+item.chestPlateBeryllium.name=Beryllium ChestPlate
+item.leggingsBeryllium.name=Beryllium Leggings
+item.bootsBeryllium.name=Beryllium Boots
 
 tile.lithiumOre.name=Lithium Ore
 tile.lithiumBlock.name=Lithium Block
 tile.sodiumOre.name=Sodium Ore
 tile.sodiumBlock.name=Sodium Block
+tile.berylliumOre.name=Beryllium Ore
+tile.berylliumBlock.name=Beryllium Block
 
 itemGroup.lithium_creative_tabs=Lithium

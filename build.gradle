@@ -12,6 +12,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.sf.proguard:proguard-gradle:5.2.1'
     }
 }
 
@@ -61,3 +62,28 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+task obfJar(type: proguard.gradle.ProGuardTask, dependsOn: reobf) {
+   inputs.file jar.archivePath
+   ext {
+       outDir = file("${buildDir}/proguard")
+       obfuscatedJar = "${outDir}/${jar.baseName}-${jar.version}.jar"
+   }
+   outDir.mkdirs()
+ 
+   injars jar.archivePath
+   outjars obfuscatedJar
+   libraryjars configurations.compile
+   configuration 'proguard.pro'
+}
+ 
+task obfOutput(type: Jar, dependsOn: obfJar) {
+   appendix = 'obf'
+   from zipTree(obfJar.obfuscatedJar)
+}
+ 
+artifacts {
+   archives obfOutput
+}
+ 
+build.dependsOn obfJar, obfOutput

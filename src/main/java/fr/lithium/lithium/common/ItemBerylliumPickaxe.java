@@ -1,0 +1,23 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.Item.ToolMaterial;
+
+public class ItemBerylliumPickaxe extends ItemPickaxe {
+
+	public ItemBerylliumPickaxe(ToolMaterial material) {
+		super(material);
+		
+		this.setUnlocalizedName("berylliumPickaxe");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
+	}
+	
+
+	@Override
+    public void registerIcons(IIconRegister iconregister)
+    {
+        this.itemIcon = iconregister.registerIcon(ModLithium.MODID + ":beryllium-pickaxe");
+    }
+
+}

@@ -1,42 +1,11 @@
-[01:01:50] [main/INFO]: Setting user: Player957
-[01:01:51] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:02:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[01:02:03] [Sound Library Loader/INFO]: Sound engine started
-[01:02:05] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[01:02:05] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[01:02:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[01:02:06] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:02:06] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[01:02:07] [Sound Library Loader/INFO]: Sound engine started
-[01:02:18] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[01:02:18] [Server thread/INFO]: Generating keypair
-[01:02:19] [Server thread/INFO]: Preparing start region for level 0
-[01:02:20] [Server thread/INFO]: Preparing spawn area: 43%
-[01:02:20] [Server thread/INFO]: Changing view distance to 2, from 10
-[01:02:21] [Server thread/INFO]: Player957[local:E:f8ac5ba1] logged in with entity id 414 at (17.770789523037095, 114.15424980256559, 263.65878968102965)
-[01:02:21] [Server thread/INFO]: Player957 joined the game
-[01:02:23] [Server thread/INFO]: Player957 has just earned the achievement [Taking Inventory]
-[01:02:23] [Client thread/INFO]: [CHAT] Player957 has just earned the achievement [Taking Inventory]
-[01:05:58] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
-[01:05:58] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
-[01:05:59] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
-[01:05:59] [Server thread/INFO]: [Player957: Set the world spawn point to (13, 112, 263)]
-[01:06:00] [Client thread/INFO]: [CHAT] Set the world spawn point to (13, 112, 263)
-[01:06:05] [Client thread/INFO]: [CHAT] /spreadplayers, /spawnpoint
-[01:06:05] [Client thread/INFO]: [CHAT] /spreadplayers, /spawnpoint
-[01:06:06] [Server thread/INFO]: [Player957: Set Player957's spawn point to (13, 112, 263)]
-[01:06:06] [Client thread/INFO]: [CHAT] Set Player957's spawn point to (13, 112, 263)
-[01:06:23] [Server thread/INFO]: [Player957: Teleported Player957 to 23.5,80.5,2323.5]
-[01:06:23] [Client thread/INFO]: [CHAT] Teleported Player957 to 23.5,80.5,2323.5
-[01:06:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3347ms behind, skipping 66 tick(s)
-[01:09:32] [Server thread/INFO]: Saving and pausing game...
-[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[01:09:33] [Client thread/INFO]: Stopping!
-[01:09:33] [Server thread/INFO]: Stopping server
-[01:09:33] [Server thread/INFO]: Saving players
-[01:09:33] [Server thread/INFO]: Saving worlds
-[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
+[22:45:24] [main/INFO]: Setting user: Player19
+[22:45:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:45:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[22:45:39] [Sound Library Loader/INFO]: Sound engine started
+[22:45:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:45:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:45:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[22:45:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:45:42] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:45:43] [Sound Library Loader/INFO]: Sound engine started
+[22:46:49] [Client thread/INFO]: Stopping!

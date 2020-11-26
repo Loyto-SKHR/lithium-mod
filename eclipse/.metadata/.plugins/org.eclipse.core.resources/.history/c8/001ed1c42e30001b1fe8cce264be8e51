@@ -1,0 +1,204 @@
+package fr.lithium.lithium.common;
+
+import cpw.mods.fml.common.*;
+import cpw.mods.fml.common.Mod.*;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.event.*;
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.lithium.lithium.proxy.CommonProxy;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.util.EnumHelper;
+
+@Mod(modid = "LithiumMod", name = "Lithium-Mod", version = "1.0.0")
+
+public class ModLithium {
+	public static final String MODID = "LithiumMod";
+	 
+	@Instance(MODID)
+	 
+	public static ModLithium instance;
+
+	@SidedProxy(clientSide = "fr.lithium.lithium.proxy.ClientProxy", serverSide = "fr.lithium.lithium.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	
+	//Items:
+	public static Item itemTest, ingotLithium, helmetLithium, chestPlateLithium, leggingsLithium, bootsLithium, helmetSodium, chestPlateSodium, leggingsSodium, bootsSodium, swordLithium, pickaxeLithium, axeLithium, shovelLithium, hoeLithium, swordSodium, pickaxeSodium, axeSodium, shovelSodium, hoeSodium, appleLithium, ingotSodium, ingotBeryllium, helmetBeryllium, chestPlateBeryllium, leggingsBeryllium, bootsBeryllium, swordBeryllium, pickaxeBeryllium, axeBeryllium, shovelBeryllium, hoeBeryllium;
+	
+	public static Block blockLithiumOre , lithiumBlock, blockSodiumOre, sodiumBlock, blockBerylliumOre, berylliumBlock;
+	
+	WorldGeneration worldgeneration = new WorldGeneration();
+	
+	public static ArmorMaterial armorLithium = EnumHelper.addArmorMaterial("armorTest", 300, new int[] {6, 16, 12, 6}, 20);
+	public static ArmorMaterial armorSodium = EnumHelper.addArmorMaterial("armorSodium", 250, new int[] {4, 13, 9, 4}, 20);
+	public static ArmorMaterial armorBeryllium = EnumHelper.addArmorMaterial("armorBeryllium", 200, new int[] {4, 11, 7, 4}, 20);
+
+	public static ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 3, 3000, 18.0F, 11.0F, 20);
+	public static ToolMaterial toolSodium = EnumHelper.addToolMaterial("toolSodium", 3, 2500, 15.0F, 8.0F, 20);
+	public static ToolMaterial toolBeryllium = EnumHelper.addToolMaterial("toolBeryllium", 3, 2000, 12.0F, 6.0F, 20);
+	
+	public static CreativeTabs lithiumCreativeTabs = new LithiumCreativeTabs("lithium_creative_tabs");
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		itemTest = new ItemTest();
+		ingotLithium = new ItemLithiumIngot();
+		ingotSodium = new ItemSodiumIngot();
+		ingotBeryllium = new ItemBerylliumIngot();
+		
+		helmetLithium = new ItemTestArmor(armorLithium, 0).setUnlocalizedName("helmetLithium").setTextureName(MODID + ":lithium-helmet").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        chestPlateLithium = new ItemTestArmor(armorLithium, 1).setUnlocalizedName("chestPlateLithium").setTextureName(MODID + ":lithium-chestplate").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        leggingsLithium = new ItemTestArmor(armorLithium, 2).setUnlocalizedName("leggingsLithium").setTextureName(MODID + ":lithium-leggings").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        bootsLithium = new ItemTestArmor(armorLithium, 3).setUnlocalizedName("bootsLithium").setTextureName(MODID + ":lithium-boots").setCreativeTab(ModLithium.lithiumCreativeTabs);
+
+		helmetSodium = new ItemSodiumArmor(armorSodium, 0).setUnlocalizedName("helmetSodium").setTextureName(MODID + ":sodium-helmet").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        chestPlateSodium = new ItemSodiumArmor(armorSodium, 1).setUnlocalizedName("chestPlateSodium").setTextureName(MODID + ":sodium-chestplate").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        leggingsSodium = new ItemSodiumArmor(armorSodium, 2).setUnlocalizedName("leggingsSodium").setTextureName(MODID + ":sodium-leggings").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        bootsSodium = new ItemSodiumArmor(armorSodium, 3).setUnlocalizedName("bootsSodium").setTextureName(MODID + ":sodium-boots").setCreativeTab(ModLithium.lithiumCreativeTabs);
+
+		helmetBeryllium = new ItemBerylliumArmor(armorBeryllium, 0).setUnlocalizedName("helmetBeryllium").setTextureName(MODID + ":beryllium-helmet").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        chestPlateBeryllium = new ItemBerylliumArmor(armorBeryllium, 1).setUnlocalizedName("chestPlateBeryllium").setTextureName(MODID + ":beryllium-chestplate").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        leggingsBeryllium = new ItemBerylliumArmor(armorBeryllium, 2).setUnlocalizedName("leggingsBeryllium").setTextureName(MODID + ":beryllium-leggings").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        bootsBeryllium = new ItemBerylliumArmor(armorBeryllium, 3).setUnlocalizedName("bootsBeryllium").setTextureName(MODID + ":beryllium-boots").setCreativeTab(ModLithium.lithiumCreativeTabs);
+        
+        swordLithium = new ItemLithiumSword(toolLithium);
+        pickaxeLithium = new ItemLithiumPickaxe(toolLithium);
+        axeLithium = new ItemLithiumAxe(toolLithium);
+        shovelLithium = new ItemLithiumShovel(toolLithium);
+        hoeLithium = new ItemLithiumHoe(toolLithium);
+        swordSodium = new ItemSodiumSword(toolSodium);
+        pickaxeSodium = new ItemSodiumPickaxe(toolSodium);
+        axeSodium = new ItemSodiumAxe(toolSodium);
+        shovelSodium = new ItemSodiumShovel(toolSodium);
+        hoeSodium = new ItemSodiumHoe(toolSodium);
+        swordBeryllium = new ItemBerylliumSword(toolBeryllium);
+        pickaxeBeryllium = new ItemBerylliumPickaxe(toolBeryllium);
+        axeBeryllium = new ItemBerylliumAxe(toolBeryllium);
+        shovelBeryllium = new ItemBerylliumShovel(toolBeryllium);
+        hoeBeryllium = new ItemBerylliumHoe(toolBeryllium);
+        
+        blockLithiumOre = new BlockLithiumOre(Material.rock);
+        lithiumBlock = new BlockLithiumBlock(Material.rock);
+        blockSodiumOre = new BlockSodiumOre(Material.rock);
+        sodiumBlock = new BlockSodiumBlock(Material.rock);
+        blockBerylliumOre = new BlockBerylliumOre(Material.rock);
+        berylliumBlock = new BlockBerylliumBlock(Material.rock);
+        
+        appleLithium = new ItemLithiumApple(4, 0.3F, false);
+        
+		GameRegistry.registerItem(itemTest, "item_test");
+		GameRegistry.registerItem(ingotLithium, "lithium_ingot");
+		GameRegistry.registerItem(ingotSodium, "sodium_ingot");
+		GameRegistry.registerItem(ingotBeryllium, "beryllium_ingot");
+		
+		GameRegistry.registerItem(helmetLithium, "lithium_helmet");
+		GameRegistry.registerItem(chestPlateLithium, "lithium_chestplate");
+		GameRegistry.registerItem(leggingsLithium, "lithium_leggings");
+		GameRegistry.registerItem(bootsLithium, "lithium_boots");
+		GameRegistry.registerItem(helmetSodium, "sodium_helmet");
+		GameRegistry.registerItem(chestPlateSodium, "sodium_chestplate");
+		GameRegistry.registerItem(leggingsSodium, "sodium_leggings");
+		GameRegistry.registerItem(bootsSodium, "sodium_boots");
+		GameRegistry.registerItem(helmetBeryllium, "beryllium_helmet");
+		GameRegistry.registerItem(chestPlateBeryllium, "beryllium_chestplate");
+		GameRegistry.registerItem(leggingsBeryllium, "beryllium_leggings");
+		GameRegistry.registerItem(bootsBeryllium, "beryllium_boots");
+		
+		GameRegistry.registerItem(swordLithium, "lithium_sword");
+		GameRegistry.registerItem(pickaxeLithium, "lithium_pickaxe");
+		GameRegistry.registerItem(axeLithium, "lithium_axe");
+		GameRegistry.registerItem(shovelLithium, "lithium_shovel");
+		GameRegistry.registerItem(hoeLithium, "lithium_hoe");
+		GameRegistry.registerItem(swordSodium, "sodium_sword");
+		GameRegistry.registerItem(pickaxeSodium, "sodium_pickaxe");
+		GameRegistry.registerItem(axeSodium, "sodium_axe");
+		GameRegistry.registerItem(shovelSodium, "sodium_shovel");
+		GameRegistry.registerItem(hoeSodium, "sodium_hoe");
+		GameRegistry.registerItem(swordBeryllium, "beryllium_sword");
+		GameRegistry.registerItem(pickaxeBeryllium, "beryllium_pickaxe");
+		GameRegistry.registerItem(axeBeryllium, "beryllium_axe");
+		GameRegistry.registerItem(shovelBeryllium, "beryllium_shovel");
+		GameRegistry.registerItem(hoeBeryllium, "beryllium_hoe");
+		
+		GameRegistry.registerBlock(blockLithiumOre, "lithium_ore");
+		GameRegistry.registerBlock(lithiumBlock, "lithium_block");
+		GameRegistry.registerBlock(blockSodiumOre, "sodium_ore");
+		GameRegistry.registerBlock(sodiumBlock, "sodium_block");
+		GameRegistry.registerBlock(blockBerylliumOre, "beryllium_ore");
+		GameRegistry.registerBlock(berylliumBlock, "beryllium_block");
+		
+		GameRegistry.registerItem(appleLithium, "lithium_apple");
+
+		GameRegistry.registerWorldGenerator(worldgeneration, 0);
+		
+		GameRegistry.addSmelting(new ItemStack(ModLithium.blockLithiumOre), new ItemStack(ModLithium.ingotLithium), 1);
+		GameRegistry.addSmelting(new ItemStack(ModLithium.blockSodiumOre), new ItemStack(ModLithium.ingotSodium), 1);
+		GameRegistry.addSmelting(new ItemStack(ModLithium.blockBerylliumOre), new ItemStack(ModLithium.ingotBeryllium), 1);
+		//
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.lithiumBlock), new Object[]{"XXX" ,"XXX", "XXX", 'X' , ModLithium.ingotLithium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.sodiumBlock), new Object[]{"XXX" ,"XXX", "XXX", 'X' , ModLithium.ingotSodium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.berylliumBlock), new Object[]{"XXX" ,"XXX", "XXX", 'X' , ModLithium.ingotBeryllium});
+		//
+		//
+		GameRegistry.addShapelessRecipe(new ItemStack(ModLithium.ingotLithium, 9), new Object[]{ new ItemStack(ModLithium.lithiumBlock)});
+		GameRegistry.addShapelessRecipe(new ItemStack(ModLithium.ingotSodium, 9), new Object[]{ new ItemStack(ModLithium.sodiumBlock)});
+		GameRegistry.addShapelessRecipe(new ItemStack(ModLithium.ingotBeryllium, 9), new Object[]{ new ItemStack(ModLithium.berylliumBlock)});
+		//
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.appleLithium), new Object[]{"XXX" ,"XZX", "XXX", 'X' , ModLithium.ingotLithium, 'Z', Items.apple});
+		//
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.swordLithium), new Object[]{"X" ,"X", "Z", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.pickaxeLithium), new Object[]{"XXX" ," Z ", " Z ", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeLithium), new Object[]{"XXX" ,"XZ ", " Z ", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeLithium), new Object[]{"XXX" ," ZX", " Z ", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.shovelLithium), new Object[]{"X" ,"Z", "Z", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeLithium), new Object[]{"XX " ," Z ", " Z ", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeLithium), new Object[]{" XX" ," Z ", " Z ", 'X' , ModLithium.ingotLithium, 'Z', Items.stick});
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.swordSodium), new Object[]{"X" ,"X", "Z", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.pickaxeSodium), new Object[]{"XXX" ," Z ", " Z ", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeSodium), new Object[]{"XXX" ,"XZ ", " Z ", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeSodium), new Object[]{"XXX" ," ZX", " Z ", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.shovelSodium), new Object[]{"X" ,"Z", "Z", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeSodium), new Object[]{"XX " ," Z ", " Z ", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeSodium), new Object[]{" XX" ," Z ", " Z ", 'X' , ModLithium.ingotSodium, 'Z', Items.stick});
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.swordBeryllium), new Object[]{"X" ,"X", "Z", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.pickaxeBeryllium), new Object[]{"XXX" ," Z ", " Z ", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeBeryllium), new Object[]{"XXX" ,"XZ ", " Z ", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.axeBeryllium), new Object[]{"XXX" ," ZX", " Z ", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.shovelBeryllium), new Object[]{"X" ,"Z", "Z", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeBeryllium), new Object[]{"XX " ," Z ", " Z ", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.hoeBeryllium), new Object[]{" XX" ," Z ", " Z ", 'X' , ModLithium.ingotBeryllium, 'Z', Items.stick});
+		//
+		//
+		GameRegistry.addRecipe(new ItemStack(ModLithium.helmetLithium), new Object[]{"XXX" ,"X X", "   ", 'X' , ModLithium.ingotLithium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.helmetLithium), new Object[]{"   " ,"XXX", "X X", 'X' , ModLithium.ingotLithium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.chestPlateLithium), new Object[]{"X X" ,"XXX", "XXX", 'X' , ModLithium.ingotLithium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.leggingsLithium), new Object[]{"XXX" ,"X X", "X X", 'X' , ModLithium.ingotLithium});
+		GameRegistry.addRecipe(new ItemStack(ModLithium.bootsLithium), new Object[]{"X X" ,"X X", "   ", 'X' , ModLithium.ingotLithium});
+	}
+	    	
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		proxy.registerRender();
+	}
+	    	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+	    	
+	}
+}

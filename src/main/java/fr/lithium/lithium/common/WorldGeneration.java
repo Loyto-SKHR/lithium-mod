@@ -35,8 +35,9 @@ public class WorldGeneration implements IWorldGenerator {
 	}
  
 	private void generateSurface(World world, Random random, int x, int z) { 
-		this.addOreSpawn(ModLithium.blockLithiumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 6, 40, 0, 15);
-		this.addOreSpawn(ModLithium.blockSodiumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 7, 60, 0, 30);
+		this.addOreSpawn(ModLithium.blockLithiumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 6, 10, 0, 15);
+		this.addOreSpawn(ModLithium.blockSodiumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 7, 20, 0, 30);
+		this.addOreSpawn(ModLithium.blockBerylliumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 8, 30, 0, 45);
 		//this.addOreSpawn('BlocÀGénérer', 'MétadataDuBloc', 'BlocÀRemplacer', world, random, x, z, 16, 16, 'TailleMaximaleDUnFilon', 'Rareté', 'PositionYMinimum', 'PositionYMaximum');
 	}
 
