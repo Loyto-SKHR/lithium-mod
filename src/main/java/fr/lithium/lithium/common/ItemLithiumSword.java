@@ -12,8 +12,8 @@ public class ItemLithiumSword extends ItemSword {
 
         super(material);
         
-		this.setUnlocalizedName("itemLithiumSword");
-		this.setCreativeTab(CreativeTabs.tabCombat);
+		this.setUnlocalizedName("lithiumSword");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 
 	@Override

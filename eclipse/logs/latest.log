@@ -1,179 +1,42 @@
-[15:34:48] [main/INFO]: Setting user: Player348
-[15:34:50] [Client thread/INFO]: LWJGL Version: 2.9.1
-[15:35:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[15:35:02] [Sound Library Loader/INFO]: Sound engine started
-[15:35:04] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[15:35:04] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[15:35:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[15:35:05] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[15:35:05] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[15:35:06] [Sound Library Loader/INFO]: Sound engine started
-[15:35:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:35:24] [Server thread/INFO]: Generating keypair
-[15:35:25] [Server thread/INFO]: Preparing start region for level 0
-[15:35:26] [Server thread/INFO]: Preparing spawn area: 48%
-[15:35:26] [Server thread/INFO]: Changing view distance to 2, from 10
-[15:35:27] [Server thread/INFO]: Player348[local:E:eb27a9b0] logged in with entity id 425 at (11.761422311400061, 113.766240090322, 270.07925524360815)
-[15:35:27] [Server thread/INFO]: Player348 a rejoint la partie
-[15:35:35] [Server thread/INFO]: Player348 vient d'obtenir le succès [Faire l'inventaire]
-[15:35:35] [Client thread/INFO]: [CHAT] Player348 vient d'obtenir le succès [Faire l'inventaire]
-[15:35:37] [Client thread/WARN]: Failed to load texture: lithiummod:textures/models/armor/lithium-layer-2.png
-java.io.FileNotFoundException: lithiummod:textures/models/armor/lithium-layer-2.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[15:36:51] [Server thread/INFO]: Saving and pausing game...
-[15:36:51] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[15:36:51] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[15:36:51] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[15:37:23] [Client thread/INFO]: Stopping!
-[15:37:23] [Server thread/INFO]: Stopping server
-[15:37:23] [Server thread/INFO]: Saving players
-[15:37:23] [Server thread/INFO]: Saving worlds
-[15:37:23] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[15:37:23] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[15:37:23] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[16:01:30] [main/INFO]: Setting user: Player905
-[16:01:36] [Client thread/INFO]: LWJGL Version: 2[16:01[16:01:53] [Client thread/INFO]: Reloading Resour[16:01:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:M[16:01:54] [Sound Library Loader/INFO]: Sound eng[16:01:55] [S[16:01:57] [Client thread/INFO]: Created: 16x16 t[16:01:59] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:01:59] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:01:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[16:02:01] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:02:01] [Client thre[16:02:01] [Sound Library Loader/INFO]: Sound eng[16:02:02] [S[16:02:34] [Server thread/INFO]: Starting integra[16:02:52] [Client thread/INFO]: Connecting to 169.254.248.181, 6750
-[16:03:53] [Client thread/INFO]: [CHAT] Player642 vient d'obtenir le succès [Faire l'inventaire]
-[16:04:15] [Client thread/INFO]: [CHAT] Player905 vient d'obtenir le succès [Faire l'inventaire]
-[16:09:03] [Client thread/INFO]: Stopping!
-ead/INFO]: Player905[local:E:de62d479] logged in with entity id 437 at (12.963256893531932, 112.8937886718252, 263.37266210819695)
-[16:02:39] [Server thread/INFO]: Player905 a rejoint la partie
-[16:02:41] [Server thread/INFO]: Saving and pausing game...
-[16:02:41] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[16:02:43] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[16:02:43] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[16:02:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2733ms behind, skipping 54 tick(s)
-[16:02:49] [Client thread/INFO]: Started on 6750
-[16:02:49] [Client thread/INFO]: [CHAT] Jeu local hébergé sur le port 6750
-[16:02:57] [User Authenticator #1/WARN]: Failed to verify username but will let them in anyway!
-[16:02:57] [Server thread/INFO]: Player642[/169.254.248.181:6768] logged in with entity id 1328 at (14.5, 75.0, 272.5)
-[16:02:57] [Server thread/INFO]: Player642 a rejoint la partie
-[16:02:57] [Client thread/INFO]: [CHAT] Player642 a rejoint la partie
-[16:03:53] [Server thread/INFO]: Player642 vient d'obtenir le succès [Faire l'inventaire]
-[16:03:53] [Client thread/INFO]: [CHAT] Player642 vient d'obtenir le succès [Faire l'inventaire]
-[16:04:15] [Server thread/INFO]: Player905 vient d'obtenir le succès [Faire l'inventaire]
-[16:04:15] [Client thread/INFO]: [CHAT] Player905 vient d'obtenir le succès [Faire l'inventaire]
-[16:09:01] [Client thread/INFO]: Stopping!
-[16:09:01] [Server thread/INFO]: Stopping server
-[16:09:01] [Server thread/INFO]: Saving players
-[16:09:01] [Server thread/INFO]: Saving worlds
-[16:09:01] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[16:09:01] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[16:09:01] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[16:09:01] [Client Shutdown Thread/INFO]: Stopping server
-[16:09:01] [Client Shutdown Thread/INFO]: Saving players
-[16:12:06] [main/INFO]: Setting user: Player511
-[16:12:10] [Client thread/INFO]: LWJGL Version: 2[16:12[16:12:29] [Client thread/INFO]: Reloading Resour[16:12:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:M[16:12:30] [Sound Library Loader/INFO]: Sound eng[16:12:31] [S[16:12:34] [Client thread/INFO]: Created: 16x16 t[16:12:36] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:12:36] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:12:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
-[16:12:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:12:39] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:12:39] [S[16:13:12] [Server thread/INFO]: Starting integra[16:13:28] [Client thread/INFO]: Connecting to 169.254.248.181, 6823
-[16:13:34] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4d84ee00[id=69f2b187-e079-316a-90f3-428ee409a7fd,name=Player934,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_271]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_271]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_271]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_271]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
-	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
-	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
-	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_271]
-	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_271]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[16:21:18] [Client thread/INFO]: Stopping!
-wn Source) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_271]
-	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_271]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_271]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[16:13:24] [Client thread/INFO]: Started on 6823
-[16:13:24] [Client thread/INFO]: [CHAT] Jeu local hébergé sur le port 6823
-[16:13:32] [User Authenticator #1/WARN]: Authentication servers are down but will let them in anyway!
-[16:13:33] [Server thread/INFO]: Player934[/169.254.248.181:6840] logged in with entity id 1653 at (13.19782067657578, 112.0, 267.8358419941812)
-[16:13:33] [Server thread/INFO]: Player934 a rejoint la partie
-[16:13:33] [Client thread/INFO]: [CHAT] Player934 a rejoint la partie
-[16:18:12] [Client thread/INFO]: Stopping!
-[16:18:12] [Server thread/INFO]: Stopping server
-[16:18:12] [Server thread/INFO]: Saving players
-[16:18:13] [Server thread/INFO]: Saving worlds
-[16:18:13] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
-[16:18:13] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
-[16:18:13] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
-[16:18:13] [Client Shutdown Thread/INFO]: Stopping server
-[16:18:13] [Client Shutdown Thread/INFO]: Saving players
+[01:01:50] [main/INFO]: Setting user: Player957
+[01:01:51] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:02:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[01:02:03] [Sound Library Loader/INFO]: Sound engine started
+[01:02:05] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[01:02:05] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[01:02:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Lithium-Mod
+[01:02:06] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[01:02:06] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[01:02:07] [Sound Library Loader/INFO]: Sound engine started
+[01:02:18] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[01:02:18] [Server thread/INFO]: Generating keypair
+[01:02:19] [Server thread/INFO]: Preparing start region for level 0
+[01:02:20] [Server thread/INFO]: Preparing spawn area: 43%
+[01:02:20] [Server thread/INFO]: Changing view distance to 2, from 10
+[01:02:21] [Server thread/INFO]: Player957[local:E:f8ac5ba1] logged in with entity id 414 at (17.770789523037095, 114.15424980256559, 263.65878968102965)
+[01:02:21] [Server thread/INFO]: Player957 joined the game
+[01:02:23] [Server thread/INFO]: Player957 has just earned the achievement [Taking Inventory]
+[01:02:23] [Client thread/INFO]: [CHAT] Player957 has just earned the achievement [Taking Inventory]
+[01:05:58] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
+[01:05:58] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
+[01:05:59] [Client thread/INFO]: [CHAT] /seed, /setblock, /setworldspawn
+[01:05:59] [Server thread/INFO]: [Player957: Set the world spawn point to (13, 112, 263)]
+[01:06:00] [Client thread/INFO]: [CHAT] Set the world spawn point to (13, 112, 263)
+[01:06:05] [Client thread/INFO]: [CHAT] /spreadplayers, /spawnpoint
+[01:06:05] [Client thread/INFO]: [CHAT] /spreadplayers, /spawnpoint
+[01:06:06] [Server thread/INFO]: [Player957: Set Player957's spawn point to (13, 112, 263)]
+[01:06:06] [Client thread/INFO]: [CHAT] Set Player957's spawn point to (13, 112, 263)
+[01:06:23] [Server thread/INFO]: [Player957: Teleported Player957 to 23.5,80.5,2323.5]
+[01:06:23] [Client thread/INFO]: [CHAT] Teleported Player957 to 23.5,80.5,2323.5
+[01:06:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3347ms behind, skipping 66 tick(s)
+[01:09:32] [Server thread/INFO]: Saving and pausing game...
+[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
+[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
+[01:09:32] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End
+[01:09:33] [Client thread/INFO]: Stopping!
+[01:09:33] [Server thread/INFO]: Stopping server
+[01:09:33] [Server thread/INFO]: Saving players
+[01:09:33] [Server thread/INFO]: Saving worlds
+[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Overworld
+[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/Nether
+[01:09:33] [Server thread/INFO]: Saving chunks for level 'Test-Lithium'/The End

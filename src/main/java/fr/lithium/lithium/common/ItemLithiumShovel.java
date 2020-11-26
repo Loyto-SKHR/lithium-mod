@@ -8,7 +8,8 @@ public class ItemLithiumShovel extends ItemSpade {
 	public ItemLithiumShovel(ToolMaterial material) {
 		super(material);
 		
-		this.setUnlocalizedName("itemLithiumShovel");
+		this.setUnlocalizedName("lithiumShovel");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 
 	@Override

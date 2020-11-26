@@ -1,5 +1,29 @@
-item.itemTest.name=test
-item.helmetTest.name=Test Helmet
-item.chestPlateTest.name=Test ChestPlate
-item.leggingsTest.name=Test Leggings
-item.bootsTest.name=Test Boots
+item.itemTest.name=Lithium
+item.lithiumApple.name=Lithium Apple
+item.lithiumIngot.name=Lithium Ingot
+item.lithiumSword.name=Lithium Sword
+item.lithiumPickaxe.name=Lithium Pickaxe
+item.lithiumAxe.name=Lithium Axe
+item.lithiumShovel.name=Lithium Shovel
+item.lithiumHoe.name=Lithium Hoe
+item.helmetLithium.name=Lithium Helmet
+item.chestPlateLithium.name=Lithium ChestPlate
+item.leggingsLithium.name=Lithium Leggings
+item.bootsLithium.name=Lithium Boots
+item.sodiumIngot.name=Sodium Ingot
+item.sodiumSword.name=Sodium Sword
+item.sodiumPickaxe.name=Sodium Pickaxe
+item.sodiumAxe.name=Sodium Axe
+item.sodiumShovel.name=Sodium Shovel
+item.sodiumHoe.name=Sodium Hoe
+item.helmetSodium.name=Sodium Helmet
+item.chestPlateSodium.name=Sodium ChestPlate
+item.leggingsSodium.name=Sodium Leggings
+item.bootsSodium.name=Sodium Boots
+
+tile.lithiumOre.name=Lithium Ore
+tile.lithiumBlock.name=Lithium Block
+tile.sodiumOre.name=Sodium Ore
+tile.sodiumBlock.name=Sodium Block
+
+itemGroup.lithium_creative_tabs=Lithium

@@ -7,8 +7,8 @@ import net.minecraft.item.Item;
 public class ItemLithiumIngot extends Item {
 
 	public ItemLithiumIngot() {
-		this.setUnlocalizedName("itemLithiumIngot");
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setUnlocalizedName("lithiumIngot");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 		
 	@Override

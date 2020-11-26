@@ -8,10 +8,10 @@ public class ItemLithiumAxe extends ItemAxe {
 	public ItemLithiumAxe(ToolMaterial material) {
 		super(material);
 		
-		this.setUnlocalizedName("ItemLithiumAxe");
+		this.setUnlocalizedName("lithiumAxe");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 	
-
 	@Override
     public void registerIcons(IIconRegister iconregister)
     {

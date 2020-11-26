@@ -1,0 +1,21 @@
+package fr.lithium.lithium.common;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemHoe;
+
+public class ItemSodiumHoe extends ItemHoe {
+
+	public ItemSodiumHoe(ToolMaterial material) {
+		super(material);
+		
+		this.setUnlocalizedName("sodiumHoe");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
+	}
+	
+	@Override
+    public void registerIcons(IIconRegister iconregister)
+    {
+        this.itemIcon = iconregister.registerIcon(ModLithium.MODID + ":sodium-hoe");
+    }
+}

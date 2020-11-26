@@ -8,7 +8,8 @@ public class ItemLithiumPickaxe extends ItemPickaxe {
 	public ItemLithiumPickaxe(ToolMaterial material) {
 		super(material);
 		
-		this.setUnlocalizedName("ItemLithiumPickaxe");
+		this.setUnlocalizedName("lithiumPickaxe");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 	
 

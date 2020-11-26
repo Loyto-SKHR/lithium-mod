@@ -8,7 +8,8 @@ public class ItemLithiumHoe extends ItemHoe {
 	public ItemLithiumHoe(ToolMaterial material) {
 		super(material);
 		
-		this.setUnlocalizedName("itemLithiumHoe");
+		this.setUnlocalizedName("lithiumHoe");
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 	
 	@Override

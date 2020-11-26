@@ -11,9 +11,9 @@ public class BlockLithiumBlock extends Block {
         
         this.setBlockName("lithiumBlock");
         this.setBlockTextureName(ModLithium.MODID + ":lithium-block");
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 
-        this.setHarvestLevel("pickaxe", 3);
+        this.setHarvestLevel("pickaxe", 2);
         this.setHardness(4.0F);
         this.setResistance(5.0F);
 	}

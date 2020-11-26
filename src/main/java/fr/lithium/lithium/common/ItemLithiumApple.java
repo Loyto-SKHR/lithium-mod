@@ -15,8 +15,8 @@ public class ItemLithiumApple extends ItemFood {
 	public ItemLithiumApple(int gigot, float saturation, boolean wolf) {
         super(gigot, saturation, wolf);
         
-        this.setUnlocalizedName("LithiumApple");
-        this.setCreativeTab(CreativeTabs.tabFood);
+        this.setUnlocalizedName("lithiumApple");
+        this.setCreativeTab(ModLithium.lithiumCreativeTabs);
         this.setAlwaysEdible();
     }
 	

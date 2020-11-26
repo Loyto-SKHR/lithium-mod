@@ -9,7 +9,7 @@ public class ItemTest extends Item {
 	public ItemTest()
 	{
 		this.setUnlocalizedName("itemTest");
-	    this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setCreativeTab(ModLithium.lithiumCreativeTabs);
 	}
 	
 	@Override
